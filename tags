@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__APP_GATE__	appGate.h	2;"	d
+__FD_SIZE__	appStr.h	3;"	d
+__FILE_MASK__	commLog.c	4;"	d	file:
+__LOG_NAME__	commLog.c	3;"	d	file:
+__MAX_BUF__	commLog.c	5;"	d	file:
+__REQ_KILL__	appSignal.c	3;"	d	file:
+__SHM_KEY__	appGate.c	3;"	d	file:
+__SHM_MASK__	appGate.c	5;"	d	file:
+__SHM_SIZE__	appGate.c	4;"	d	file:
+fCreateNode	appStr.c	/^gsList* fCreateNode(gsList* spArg){$/;"	f
+fCreateShm	appGate.c	/^bool fCreateShm(void){$/;"	f
+fFindIndex	appStr.c	/^bool fFindIndex(gsList* spArg,int iArg){$/;"	f
+fInsertNode	appStr.c	/^void fInsertNode(gsList* spArg,int iIdx){$/;"	f
+fReloadHead	appStr.c	/^void fReloadHead(gsList* spArg){$/;"	f
+fRemoveNode	appStr.c	/^void fRemoveNode(gsList* spArg,int iIdx){$/;"	f
+fReqKill	appSignal.c	/^void fReqKill(int iNum){$/;"	f
+giCnt	main.c	/^int giCnt[2] = {0,};$/;"	v
+giIdx	main.c	/^int giIdx = 0;$/;"	v
+giShmFd	appGate.c	/^int giShmFd = 0;$/;"	v
+gsAfter	appSignal.c	/^struct sigaction gsAfter;$/;"	v	typeref:struct:sigaction
+gsBefore	appSignal.c	/^struct sigaction gsBefore;$/;"	v	typeref:struct:sigaction
+gsList	appStr.h	/^typedef struct gsList{$/;"	s
+gsList	appStr.h	/^}gsList;$/;"	t	typeref:struct:gsList
+iFd	appStr.h	/^	int		iFd[__FD_SIZE__];$/;"	m	struct:gsList
+iIdx	appStr.h	/^	int		iIdx;$/;"	m	struct:gsList
+iShmId	appStr.h	/^	int		iShmId;$/;"	m	struct:gsList
+kShmKey	appStr.h	/^	key_t	kShmKey;$/;"	m	struct:gsList
+main	main.c	/^int main(void){$/;"	f
+pHead	appStr.h	/^	struct gsList* pHead;$/;"	m	struct:gsList	typeref:struct:gsList::gsList
+pNext	appStr.h	/^	struct gsList* pNext;$/;"	m	struct:gsList	typeref:struct:gsList::gsList
+vhmAddr	appStr.h	/^	void*	vhmAddr;$/;"	m	struct:gsList
+writeStamp	commLog.c	/^bool writeStamp(void* vaArg){$/;"	f
