@@ -14,6 +14,7 @@ int main(void){
 		exit(-1);
 	}
 	fCreateShm();
+	fCreateMq();
 	
 	{
 		gsAfter.sa_handler = fReqKill;

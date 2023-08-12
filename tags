@@ -9,10 +9,16 @@ __FD_SIZE__	appStr.h	3;"	d
 __FILE_MASK__	commLog.c	4;"	d	file:
 __LOG_NAME__	commLog.c	3;"	d	file:
 __MAX_BUF__	commLog.c	5;"	d	file:
+__MQ_LEN__	appGate.c	8;"	d	file:
+__MQ_MASK__	appGate.c	9;"	d	file:
+__MQ_NAME__	appGate.c	6;"	d	file:
+__MQ_NAME__	appSignal.c	4;"	d	file:
+__MQ_SIZE__	appGate.c	7;"	d	file:
 __REQ_KILL__	appSignal.c	3;"	d	file:
 __SHM_KEY__	appGate.c	3;"	d	file:
 __SHM_MASK__	appGate.c	5;"	d	file:
 __SHM_SIZE__	appGate.c	4;"	d	file:
+fCreateMq	appGate.c	/^bool fCreateMq(void){$/;"	f
 fCreateNode	appStr.c	/^gsList* fCreateNode(gsList* spArg){$/;"	f
 fCreateShm	appGate.c	/^bool fCreateShm(void){$/;"	f
 fFindIndex	appStr.c	/^bool fFindIndex(gsList* spArg,int iArg){$/;"	f
@@ -22,6 +28,8 @@ fRemoveNode	appStr.c	/^void fRemoveNode(gsList* spArg,int iIdx){$/;"	f
 fReqKill	appSignal.c	/^void fReqKill(int iNum){$/;"	f
 giCnt	main.c	/^int giCnt[2] = {0,};$/;"	v
 giIdx	main.c	/^int giIdx = 0;$/;"	v
+giMqAttr	appGate.c	/^struct mq_attr giMqAttr;$/;"	v	typeref:struct:mq_attr
+giMqFd	appGate.c	/^mqd_t giMqFd = 0;$/;"	v
 giShmFd	appGate.c	/^int giShmFd = 0;$/;"	v
 gsAfter	appSignal.c	/^struct sigaction gsAfter;$/;"	v	typeref:struct:sigaction
 gsBefore	appSignal.c	/^struct sigaction gsBefore;$/;"	v	typeref:struct:sigaction

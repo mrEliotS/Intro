@@ -18,4 +18,5 @@
 #include <time.h>
 
 bool fCreateShm(void);
+bool fCreateMq(void);
 #endif
