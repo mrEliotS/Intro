@@ -21,6 +21,7 @@ __SHM_SIZE__	appGate.c	4;"	d	file:
 fCreateMq	appGate.c	/^bool fCreateMq(void){$/;"	f
 fCreateNode	appStr.c	/^gsList* fCreateNode(gsList* spArg){$/;"	f
 fCreateShm	appGate.c	/^bool fCreateShm(void){$/;"	f
+fDaemon	appDaemon.c	/^void fDaemon(void){$/;"	f
 fFindIndex	appStr.c	/^bool fFindIndex(gsList* spArg,int iArg){$/;"	f
 fInsertNode	appStr.c	/^void fInsertNode(gsList* spArg,int iIdx){$/;"	f
 fReloadHead	appStr.c	/^void fReloadHead(gsList* spArg){$/;"	f

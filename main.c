@@ -13,9 +13,9 @@ int main(void){
 	if(!(writeStamp(NULL)) ){
 		exit(-1);
 	}
+	fDaemon();
 	fCreateShm();
 	fCreateMq();
-	
 	{
 		gsAfter.sa_handler = fReqKill;
 		gsAfter.sa_flags = 0;
@@ -23,7 +23,7 @@ int main(void){
 		sigaction(15,&gsAfter,&gsBefore);
 	}
 	while(1){
-		puts("______");
+		puts("run");
 		sleep(1);
 	}
 
