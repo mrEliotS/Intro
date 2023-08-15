@@ -20,3 +20,20 @@
 bool fCreateShm(void);
 bool fCreateMq(void);
 #endif
+
+//SOCKET
+#ifdef __APP_SSL__
+#include <memory.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+
+//OPEN SSL
+#include <openssl/bio.h>
+#include <openssl/err.h>
+#include <openssl/rand.h>
+#include <openssl/evp.h>
+#include <openssl/crypto.h>
+#include <openssl/ssl.h>
+#endif
