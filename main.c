@@ -10,7 +10,7 @@ extern struct sigaction gsBefore;
 int giCnt[2] = {0,};
 int giIdx = 0;
 
-int main(void){
+int main(int argc,char** argv){
 
 	//************************
 	puts("Want ssl chat mode?");

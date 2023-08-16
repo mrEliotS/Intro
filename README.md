@@ -29,5 +29,25 @@ ChangeLog
 
 -Add SSL Socket Module(Not Stable)
 ------------------------------------------
+------------------------------------------
+20230816
+ChangeLog
+
+-Modify SSL Module(Not Stable)
+server -> source libLoad.sh
+client -> source libLoadc.sh
+
+<Descriptions>
+1.Port 7114 fix
+2.Ip 127.0.0.1 fix
+
+No Modify 
+Loopback test only!
+Requ Openssl lib =  v1.0.2
+------------------------------------------
+
+
+
+
 
 

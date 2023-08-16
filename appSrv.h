@@ -1,6 +1,7 @@
 #define __APP_SSL__
+
 #define PORT 7114
-#define SERVER_ADDRESS "10.0.0.13"
+#define SERVER_ADDRESS "127.0.0.1"
 
 #include "./appGate.h"
 
