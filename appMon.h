@@ -6,9 +6,12 @@
 #include <sys/utsname.h>
 #include <sys/param.h>
 #include <sys/sysinfo.h>
+#include <sys/types.h>
+#include <pwd.h>
 
 void fShowMon(void);
 void fShowKern(void);
 void fShowMem(void);
+void fShowUsr(void);
 
 #endif
