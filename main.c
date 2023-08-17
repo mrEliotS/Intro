@@ -3,6 +3,8 @@
 #include "./appStr.h"
 #include "./appSignal.h"
 #include "./appSrv.h"
+#include "./appMon.h"
+#include "./appCss.h"
 
 extern struct sigaction gsAfter;
 extern struct sigaction gsBefore;
@@ -11,15 +13,16 @@ int giCnt[2] = {0,};
 int giIdx = 0;
 
 int main(int argc,char** argv){
+	/*
+	fShowMon();//Show os & res info
+	*/
 
-	//************************
 	puts("Want ssl chat mode?");
 	int liFlag = 0;
 	puts("yes = anykey no = 0");
 	scanf("%d",&liFlag);
 	if(liFlag)
 		fStartSSL();
-	///***********************
 
 	if(!(writeStamp(NULL)) ){
 		exit(-1);

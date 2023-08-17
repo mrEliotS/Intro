@@ -9,7 +9,6 @@ MakeBy seliot 2023
 -> cd /app/sBuild
 
 4.Build src <SSL-Server + IPC>
-------------------------------------------
 ****gcc -o $name is options...******
 -> gcc *.c -I. -L. -lSSLs -l__list -lrt -lssl -lcrypto
 
@@ -23,13 +22,10 @@ MakeBy seliot 2023
 
 6.Run file
 
-------------------------------------------
 20230815
 ChangeLog
 
 -Add SSL Socket Module(Not Stable)
-------------------------------------------
-------------------------------------------
 20230816
 ChangeLog
 
@@ -43,8 +39,7 @@ client -> source libLoadc.sh
 
 No Modify 
 Loopback test only!
-Requ Openssl lib =  v1.0.2
-------------------------------------------
+Req Openssl lib =  v1.0.2
 
 
 
