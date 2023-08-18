@@ -1,48 +1,24 @@
 MakeBy seliot 2023
 
-1.Make build folder 
--> mkdir -p /app/sBuild
+REQ = gcc 4.8.5 , openssl 1.0.2
 
-2.Move source file to /app/sBuild
+1.git clone [Folder]
+2.cd [Folder]/
+3.source libLoad.sh
+4.cd sslChat
+5.source libLoadc.sh
+6.start app
 
-3.Change Dir /app/sBuild
--> cd /app/sBuild
+20230817 ChangeLog
+- add SSL SOCK MOD
+- add CHECK SYSTEM INFO
+- add COLOR TEXT
 
-4.Build src <SSL-Server + IPC>
-****gcc -o $name is options...******
--> gcc *.c -I. -L. -lSSLs -l__list -lrt -lssl -lcrypto
+20230818 ChangeLog
+- add CHECK NICARD INFO
 
-5.Build src <SSL-Client>
-********gcc -o $name is options...******
-->cd sslChat
-->gcc *.c -I. -L. -lSSLc -lssl -lcrypto
-
-6.Exec shell
--> sh libLoad.sh
-
-6.Run file
-
-20230815
-ChangeLog
-
--Add SSL Socket Module(Not Stable)
-20230816
-ChangeLog
-
--Modify SSL Module(Not Stable)
-server -> source libLoad.sh
-client -> source libLoadc.sh
-
-<Descriptions>
-1.Port 7114 fix
-2.Ip 127.0.0.1 fix
-
-No Modify 
-Loopback test only!
-Req Openssl lib =  v1.0.2
-
-
-
-
+=Descriptions=<br/>
+This module and app is test only<br/>
+Stable version ? = Unstable
 
 
