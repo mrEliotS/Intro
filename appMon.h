@@ -8,9 +8,12 @@
 #include <sys/param.h>
 #include <sys/sysinfo.h>
 #include <sys/types.h>
+#include <sys/ioctl.h>
 #include <pwd.h>
 #include <ifaddrs.h>
 #include <arpa/inet.h>
+#include <net/if.h>
+
 
 void fShowMon(void);
 void fShowKern(void);

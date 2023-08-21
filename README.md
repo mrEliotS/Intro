@@ -17,6 +17,9 @@ REQ = gcc 4.8.5 , openssl 1.0.2
 20230818 ChangeLog
 - add CHECK NICARD INFO
 
+20230821 ChangeLog
+- add CHECK MAC ADDR INFO
+
 =Descriptions=<br/>
 This module and app is test only<br/>
 Stable version ? = Unstable
