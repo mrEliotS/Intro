@@ -13,6 +13,7 @@
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #include <net/if.h>
+#include <curl/curl.h>
 
 
 void fShowMon(void);

@@ -19,7 +19,7 @@ int main(int argc,char** argv){
 	puts("Want ssl chat mode?");
 	int liFlag = 0;
 	puts("yes = anykey no = 0");
-	scanf("%d",&liFlag);
+	scanf("%c",&liFlag);
 	if(liFlag)
 		fStartSSL();
 
