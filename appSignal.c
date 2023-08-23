@@ -1,5 +1,8 @@
 #include "./appSignal.h"
 #include "./commLog.h"
+#include "./appStr.h"
+
+extern gsList* gspInfo;
 
 #define __REQ_KILL__ 15
 #define __REQ_POLL__ 10
@@ -13,6 +16,7 @@ struct sigaction gsBefore;
 
 void fReqKill(int iNum){
 	puts("REMOVE SHM");
+	shmdt((void*)gspInfo->vhmAddr);
 	shmctl(giShmFd,IPC_RMID,0);
 	if(-1 == mq_close(giMqFd)){
 		perror("mq close");

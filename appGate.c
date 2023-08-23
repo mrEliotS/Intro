@@ -1,12 +1,15 @@
 #include "./appGate.h"
+#include "./appStr.h"
 
 #define __SHM_KEY__ 71143321
-#define __SHM_SIZE__ ((1500) * (2))
+#define __SHM_SIZE__ ((64) * (2))
 #define __SHM_MASK__ 0666
 #define __MQ_NAME__ "/SELIOT_RC"
 #define __MQ_SIZE__ 5
-#define __MQ_LEN__ 4096
+#define __MQ_LEN__ 30
 #define __MQ_MASK__ 0666
+
+extern gsList* gspInfo;
 
 int giShmFd = 0;
 mqd_t giMqFd = 0;
@@ -24,6 +27,19 @@ bool fCreateShm(void){
 		return false;
 	}
 	giShmFd = liFd;
+	if(NULL == gspInfo){
+		puts("List info is NULL");
+		exit(-1);
+	}
+	gspInfo->iShmId = liFd;
+	gspInfo->vhmAddr = NULL;
+
+	void* lvHideItem = shmat(liFd,NULL,0);
+	if((void*)-1 == (void*)lvHideItem){
+		puts("SHM attach error");
+		exit(-1);
+	}
+	strcpy((char*)lvHideItem,"github.com/mrEliotS");
 	return true;
 }
 bool fCreateMq(void){
@@ -36,5 +52,6 @@ bool fCreateMq(void){
 		perror("mq error");
 		return false;
 	}
+	gspInfo->mMqKey = giMqFd;
 	return true;
 }

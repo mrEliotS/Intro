@@ -25,6 +25,11 @@ REQ = gcc 4.8.5 , openssl 1.0.2 , libcurl-devel
 
 20230823 ChangeLog
 - add POLL MODULE , WRITE TRANSFER DATA LOG
+- add THREAD -|<br/>
+              ---- SEND MESSAGE MQ - thread A<br/>
+			  |<br/>
+			  ---- RECV MESSAGE MQ - thread B<br/>
+- add MAPPING SHM A ------ B COMMUNICATIONS
 
 =Descriptions=<br/>
 This module and app is test only<br/>

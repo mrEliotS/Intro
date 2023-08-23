@@ -4,11 +4,15 @@
 
 typedef struct gsList{
 	int		iIdx;
+	bool	bStat;
+	int	bLogFlag;
 
 	int		iFd[__FD_SIZE__];
 	int		iShmId;
 	key_t	kShmKey;
 	void*	vhmAddr;
+
+	mqd_t	mMqKey;
 
 	struct gsList* pNext;
 	struct gsList* pHead;
