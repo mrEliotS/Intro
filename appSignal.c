@@ -1,6 +1,8 @@
 #include "./appSignal.h"
+#include "./commLog.h"
 
 #define __REQ_KILL__ 15
+#define __REQ_POLL__ 10
 #define __MQ_NAME__ "/SELIOT_RC"
 
 extern int giShmFd;
@@ -20,11 +22,15 @@ void fReqKill(int iNum){
 		perror("mq remove");
 		exit(-1);
 	}
-	
 	puts("REMOVE MQ");
 	if(-1 == kill(getpid(),15)){
 		perror("SIGKILL");
 		exit(-1);
 	}
 	sigaction(__REQ_KILL__,&gsBefore,NULL);
+	return;
+}
+void fReqPoll(int iNum){
+	writeStamp("Arrived client message time =");
+	return;
 }

@@ -16,6 +16,7 @@
 #include <signal.h>
 #include <pthread.h>
 #include <time.h>
+#include <poll.h>
 
 bool fCreateShm(void);
 bool fCreateMq(void);
