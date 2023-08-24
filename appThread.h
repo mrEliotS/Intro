@@ -5,4 +5,5 @@
 
 void* fStartJob(void*);
 void* fReadShm(void*);
+void* fMutexTest(void*);
 void fStartThread(void);

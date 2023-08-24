@@ -31,6 +31,11 @@ REQ = gcc 4.8.5 , openssl 1.0.2 , libcurl-devel
 			  ---- RECV MESSAGE MQ - thread B<br/>
 - add MAPPING SHM A ------ B COMMUNICATIONS
 
+20230824 ChangeLog
+- add MUTEX EXAMPLE CODE
+- add kill execXXX script command
+kill -15 `ps -aux | grep -i execServer | grep -v grep|awk '{print $2}'`
+
 =Descriptions=<br/>
 This module and app is test only<br/>
 Stable version ? = Unstable
