@@ -26,16 +26,23 @@ REQ = gcc 4.8.5 , openssl 1.0.2 , libcurl-devel
 20230823 ChangeLog
 - add POLL MODULE , WRITE TRANSFER DATA LOG
 - add THREAD -|<br/>
-              ---- SEND MESSAGE MQ - thread A<br/>
-			  |<br/>
-			  ---- RECV MESSAGE MQ - thread B<br/>
+---- SEND MESSAGE MQ - thread A<br/>
+|<br/>
+---- RECV MESSAGE MQ - thread B<br/>
 - add MAPPING SHM A ------ B COMMUNICATIONS
 
 20230824 ChangeLog
 - add MUTEX EXAMPLE CODE
-- add kill execXXX script command
-kill -15 `ps -aux | grep -i execServer | grep -v grep|awk '{print $2}'`
+- add kill execXXX script command \=
+kill -15 \`ps -aux | grep -i execServer | grep -v grep|awk '{print $2}'\`
+- add QUICK SORT PROTOTYPE
+
+20230825 ChangeLog
+- add PRINT CURRENT COUNTRY COD example:1.1.1.1 \= US
 
 =Descriptions=<br/>
 This module and app is test only<br/>
 Stable version ? = Unstable
+
+![C\/C++](https://w0.peakpx.com/wallpaper/451/1006/HD-wallpaper-c-plus-plus-metal-logo-grunge-programming-language-signs-blue-metal-background-c-plus-plus-creative-programming-language-c-plus-plus-logo.jpg)
+

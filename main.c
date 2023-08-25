@@ -16,7 +16,7 @@ int giCnt[2] = {0,};
 int giIdx = 0;
 
 int main(int argc,char** argv){
-	//fShowMon();//Show os & res info
+	fShowMon();//Show os & res info
 
 	puts("Want ssl chat mode?");
 	int liFlag = 0;
