@@ -1,6 +1,6 @@
 MakeBy seliot 2023
 
-REQ = gcc 4.8.5 , openssl 1.0.2 , libcurl-devel
+REQ = gcc 4.8.5 , openssl 1.0.2 , libcurl-devel , libpcap-devel
 
 1.git clone [Folder]<br/>
 2.cd [Folder]/<br/>
