@@ -7,6 +7,7 @@
 #include "./appCss.h"
 #include "./appThread.h"
 #include "./appETC.h"
+#include "./appDump.h"
 
 extern struct sigaction gsAfter;
 extern struct sigaction gsBefore;
@@ -16,6 +17,8 @@ int giCnt[2] = {0,};
 int giIdx = 0;
 
 int main(int argc,char** argv){
+	//fStartCapture(); //Show lo packet capture <TCP>
+
 	fShowMon();//Show os & res info
 
 	puts("Want ssl chat mode?");

@@ -40,6 +40,9 @@ kill -15 \`ps -aux | grep -i execServer | grep -v grep|awk '{print $2}'\`
 20230825 ChangeLog
 - add PRINT CURRENT COUNTRY COD example:1.1.1.1 \= US
 
+20230827 ChangeLog
+- add PRINT LO PORT PACKET CAPTURE CHECK COUNT = 300 
+
 =Descriptions=<br/>
 This module and app is test only<br/>
 Stable version ? = Unstable
